@@ -1,6 +1,6 @@
 # Ray-Tracing-Based Time Shift Synthesis
 
-This directory contains a GPU-accelerated implementation of ray-tracing-based forward modeling for synthesizing time-shift maps from speed-of-sound (SoS) distributions. It is part of the larger `SoS_time_shift_DL` project and corresponds to the physics-based simulation component.
+This directory contains a GPU-accelerated implementation of ray-tracing synthesis, to derive time-shift maps from an arbitrary image pattern. It is part of the larger `SoS_time_shift_DL` project.
 
 ## Contents
 
@@ -21,7 +21,7 @@ This directory contains a GPU-accelerated implementation of ray-tracing-based fo
 
 - `d11_11_minus7p5_forward_modelmatrix.mat`: Forward model matrix for −7.5° transmit angle
 
-## Usage
+## Demo
 
 To reproduce the example shown in the notebook:
 
