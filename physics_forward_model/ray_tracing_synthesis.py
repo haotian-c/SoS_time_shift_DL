@@ -64,10 +64,10 @@ class SoSToTimeShiftTransformer:
 
 def image_to_sos_map(image: Image.Image) -> np.ndarray:
     """
-    Convert a grayscale image to a SoS map.
+    Convert an image to a SoS map.
 
     Args:
-        image (PIL.Image.Image): Input grayscale image.
+        image (PIL.Image.Image): Input image.
 
     Returns:
         np.ndarray: Scaled SoS map of shape (73, 89)
