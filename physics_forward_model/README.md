@@ -33,3 +33,11 @@ jupyter notebook demo_ray_tracing_synthesis.ipynb
 
 You can view the rendered demo notebook here:  
 [demo_ray_tracing_synthesis.ipynb](./demo_ray_tracing_synthesis.ipynb)
+
+
+
+![image](https://github.com/user-attachments/assets/37faa59a-30e1-46b5-a892-23173e618784)
+
+![image](https://github.com/user-attachments/assets/426bd4cb-e8cd-4daf-9891-8fc301ec33c5)
+
+![image](https://github.com/user-attachments/assets/e45acb11-2158-4001-a1dc-e2896a31e32f)
