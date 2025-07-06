@@ -23,16 +23,17 @@ This directory contains a GPU-accelerated implementation of ray-tracing synthesi
 
 ## Demo
 
-To reproduce the example shown in the notebook:
 
 ```bash
 jupyter notebook demo_ray_tracing_synthesis.ipynb
 ```
 
-## Demo Notebook
+
 
 You can view the rendered demo notebook here:  
 [demo_ray_tracing_synthesis.ipynb](./demo_ray_tracing_synthesis.ipynb)
+
+
 
 
 
