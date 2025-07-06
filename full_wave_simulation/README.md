@@ -16,7 +16,8 @@ This repository provides MATLAB scripts for performing GPU-accelerated 2D ultras
 
 ```matlab
 addpath('path_to_kWave');
-savepath; ```
+savepath;
+```
 
 
 • Parallel Computing Toolbox
