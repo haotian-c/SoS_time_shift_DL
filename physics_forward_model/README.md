@@ -29,4 +29,7 @@ To reproduce the example shown in the notebook:
 jupyter notebook demo_ray_tracing_synthesis.ipynb
 ```
 
-[View in nbviewer](https://nbviewer.org/github/your-username/your-repo/blob/main/ray_tracing_synthesis/demo_ray_tracing_synthesis.ipynb)
+## Demo Notebook
+
+You can view the rendered demo notebook here:  
+[demo_ray_tracing_synthesis.ipynb](./demo_ray_tracing_synthesis.ipynb)
