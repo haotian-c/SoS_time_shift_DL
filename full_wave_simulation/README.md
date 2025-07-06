@@ -5,7 +5,7 @@ This repository provides MATLAB scripts for performing GPU-accelerated 2D ultras
 ---
 
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Prerequisites
 
@@ -54,7 +54,7 @@ For each object and transmit angle, the simulation produces:
 
 ---
 
-## 🧠 Multi-GPU Support
+## Multi-GPU Support
 
 This script allows **dispatching jobs to a specific GPU** via the `GPU_i` argument. This enables:
 
@@ -76,7 +76,7 @@ You may run multiple MATLAB instances in parallel, each targeting different obje
 
 ---
 
-## 📌 Simulation Details
+## Simulation Details
 
 - Designed for the **GE 9L-D linear ultrasound probe**:
   - 192 elements
@@ -89,7 +89,7 @@ You may run multiple MATLAB instances in parallel, each targeting different obje
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 - [k-Wave Toolbox](http://www.k-wave.org/)
 - MATLAB with **Parallel Computing Toolbox**
