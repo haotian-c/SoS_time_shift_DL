@@ -60,7 +60,7 @@ For each object and transmit angle, the simulation produces:
 
 This script allows **dispatching jobs to a specific GPU** via the `GPU_i` argument. This enables:
 
-- Efficient use of **multiple GPUs** on a shared machine
+- Efficient use of **multiple GPUs** on a host machine
 - Workload parallelism when generating large datasets
 - Simulating different phantom indices independently across GPUs
 
