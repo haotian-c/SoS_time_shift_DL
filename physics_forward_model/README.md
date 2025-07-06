@@ -1,0 +1,29 @@
+# Ray-Tracing-Based Time Shift Synthesis
+
+This directory contains a GPU-accelerated implementation of ray-tracing-based forward modeling for synthesizing time-shift maps from speed-of-sound (SoS) distributions. It is part of the larger `SoS_time_shift_DL` project and corresponds to the physics-based simulation component.
+
+## Contents
+
+- `ray_tracing_synthesis.py`: Python module that defines:
+  - `SoSToTimeShiftTransformer`: a class for SoS-to-time-shift conversion using precomputed ray-tracing forward matrices
+  - `image_to_sos_map`: a utility function to convert grayscale images into SoS maps
+
+- `demo_ray_tracing_synthesis.ipynb`: Jupyter notebook demonstrating:
+  - Image-to-SoS map conversion from `example.jpg`
+  - Ray-tracing synthesis of time-shift maps using forward models corresponding to mid angles of 0°, +7.5°, and −7.5°
+  - Computational performance measurement, with runtime under 0.01 seconds on an NVIDIA A40 GPU
+
+- `example.jpg`: Sample grayscale image used for demonstration
+
+- `d11_11_psf0_forward_modelmatrix.mat`: Forward model matrix for 0° transmit angle
+
+- `d11_11_7p5_forward_modelmatrix.mat`: Forward model matrix for +7.5° transmit angle
+
+- `d11_11_minus7p5_forward_modelmatrix.mat`: Forward model matrix for −7.5° transmit angle
+
+## Usage
+
+To reproduce the example shown in the notebook:
+
+```bash
+jupyter notebook demo_ray_tracing_synthesis.ipynb
