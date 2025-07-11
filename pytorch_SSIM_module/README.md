@@ -4,7 +4,7 @@ This directory provides a PyTorch implementation of the Structural Similarity In
 
 ---
 
-## Files
+## Code
 
 - `ssim.py`: Core implementation of SSIM using PyTorch and `torch.nn.functional`.
 
