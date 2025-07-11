@@ -1,6 +1,6 @@
 # Structural Similarity Index (SSIM) for PyTorch
 
-This repository provides a PyTorch implementation of the Structural Similarity Index (SSIM), a widely used image quality metric that evaluates perceptual similarity between two images. It includes both a callable function and a PyTorch module class for easy integration into deep learning pipelines.
+This directory provides a PyTorch implementation of the Structural Similarity Index (SSIM), which is integrated into loss function to encourage learning of structural information in speed-of-sound (SoS) images.
 
 ---
 
