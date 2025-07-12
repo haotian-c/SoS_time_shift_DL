@@ -51,8 +51,6 @@ If you use this work, please cite:
 }
 ```
 
-## Contributor
-- **Haotian Chen** 
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
