@@ -27,21 +27,13 @@ conda env create -f environment.yml
 conda activate my_env_name
 ```
 
-### Running the Project
-#### Running a Demo
-To run a demonstration of the model:
-```bash
-jupyter notebook demo.ipynb
-```
 
 
 ## Notes
 - The common-mid angle (CMA) tracking is implemented in MATLAB using Signal Processing Toolbox for efficient processing.
 - The inference is implemented in Python using PyTorch framework.
 
-## Notes
-- The common-mid angle (CMA) tracking is implemented in MATLAB using Signal Processing Toolbox for efficient processing.
-- The inference is implemented in Python using PyTorch framework.
+
 
 ## Citation
 
