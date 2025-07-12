@@ -9,8 +9,10 @@ This repository accompanies the paper
 ```
 /project_root
 │── /CMA_tracking             # Common mid-angle tracking, including beamforming and phase shift tracking
-│── /physics_forward_model    # Physics-based forward models at psf = 0, 7.5, and -7.5 degrees respectively
+│── /full-wave simulation     # Full-wave simulation using k-Wave simulation toolbox and with GPU configuration
+│── /ray_tracing_synthesis    # GPU-accellerated ray-tracing synthesize to convert natural image to SoS map and then compute time-shift map
 │── /pytorch_SSIM_module      # PyTorch implementation SSIM loss for training
+│── /model_training           # pretraining using ray-tracing synthesized data and finetuning with full-wave simulation data
 │── LICENSE                   # License information
 │── README.md                 # Project documentation
 │── model.py                  # Time-shift DL model implemented as U-Net
@@ -37,6 +39,9 @@ jupyter notebook demo.ipynb
 - The common-mid angle (CMA) tracking is implemented in MATLAB using Signal Processing Toolbox for efficient processing.
 - The inference is implemented in Python using PyTorch framework.
 
+## Notes
+- The common-mid angle (CMA) tracking is implemented in MATLAB using Signal Processing Toolbox for efficient processing.
+- The inference is implemented in Python using PyTorch framework.
 
 ## Citation
 
