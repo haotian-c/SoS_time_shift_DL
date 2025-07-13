@@ -44,8 +44,8 @@ This project relies on **k-Wave 1.4** for full-wave ultrasound simulation. Pleas
 
 
 ## Notes
-- The common-mid angle (CMA) tracking is implemented in MATLAB using Signal Processing Toolbox for efficient processing.
-- The inference is implemented in Python using PyTorch framework.
+- The common-mid angle (CMA) tracking is implemented in MATLAB using Signal Processing Toolbox and Parallel Computing Toolbox.
+- The deep learning is implemented in Python using PyTorch framework.
 
 
 
