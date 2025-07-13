@@ -9,8 +9,10 @@ This repository accompanies the paper
 ```
 /project_root
 │── /CMA_tracking             # Common mid-angle tracking, including beamforming and phase shift tracking
-│── /physics_forward_model    # Physics-based forward models at psf = 0, 7.5, and -7.5 degrees respectively
+│── /full-wave simulation     # Full-wave simulation using k-Wave simulation toolbox and with GPU configuration
+│── /ray_tracing_synthesis    # GPU-accellerated ray-tracing synthesize to convert natural image to SoS map and then compute time-shift map
 │── /pytorch_SSIM_module      # PyTorch implementation SSIM loss for training
+│── /model_training           # pretraining using ray-tracing synthesized data and finetuning with full-wave simulation data
 │── LICENSE                   # License information
 │── README.md                 # Project documentation
 │── model.py                  # Time-shift DL model implemented as U-Net
@@ -18,24 +20,21 @@ This repository accompanies the paper
 ```
 
 ## Setup Instructions
+This project uses MATLAB for full-wave simulation, beamforming, and phase-shift tracking, and Python for ray-tracing synthesis and deep learning model training.
+
 ### Installing Dependencies
-To install the required dependencies, create and activate the Conda environment:
+To install the required Python dependencies, create and activate the Conda environment:
 ```bash
 conda env create -f environment.yml
 conda activate my_env_name
 ```
 
-### Running the Project
-#### Running a Demo
-To run a demonstration of the model:
-```bash
-jupyter notebook demo.ipynb
-```
 
 
 ## Notes
 - The common-mid angle (CMA) tracking is implemented in MATLAB using Signal Processing Toolbox for efficient processing.
 - The inference is implemented in Python using PyTorch framework.
+
 
 
 ## Citation
@@ -52,8 +51,6 @@ If you use this work, please cite:
 }
 ```
 
-## Contributor
-- **Haotian Chen** 
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
