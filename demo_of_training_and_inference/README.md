@@ -2,7 +2,7 @@
 
 This project uses a U-Net model to transform time-shift maps into speed of sound (SoS) maps. While the complete project is more extensive, this directory provides a quick-start setup for model training and inference.
 
-A runnable demo is provided in **`demo_of_training_and_inference.ipynb`**, which includes both the ray-tracing synthesis (using 1.2 million natural images) and the U-Net model pipeline.
+A runnable demo is provided in [**`demo_of_training_and_inference.ipynb`**](https://github.com/haotian-c/SoS_time_shift_DL/blob/main/demo_of_training_and_inference/demo_of_training_and_inference.ipynb), which includes both the ray-tracing synthesis (using 1.2 million natural images) and the U-Net model pipeline.
 
 ## Quick Start
 
