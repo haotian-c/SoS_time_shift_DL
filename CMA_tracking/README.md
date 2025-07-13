@@ -20,7 +20,8 @@ The `function_phase_shift_tracking.m` script performs common-mid angle phase shi
 - Specifies all the **TX and RX angle combinations** used in beamforming.
 
 ### **cells_phase_track_struct_lookup.mat**
-- Defines the three **mid-angle groups** (0°, 7.5°, -7.5°) and the corresponding **TX and RX angle combinations**.
+-  Specifies all the **TX and RX angle combinations** used in phase-shift tracking.
+-  Compared with **BF_angle_combs.mat**, which lists all angle combinations that can be processed in parallel, the **cells_phase_track_struct_lookup.mat** is grouped by mid angles (-7.5, 0, 7.5), and the order matters for each angular combination: whether tracking is performed from A to B or from B to A, since the direction will affect the sign in the later summation process.
 
 ### **workspace.mat**
 - Stores experiment settings, including:
