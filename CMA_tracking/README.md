@@ -6,7 +6,7 @@ The common-mid angle processing is performed through two steps:
 The `function_beamforming_parallel.m` script performs dynamic receiving, confining the RX angle to be symmetric to the TX angle with respect to a prespecified mid-angle. 
 
 - It reads from `BF_angle_combs.mat`, which specifies all the combinations of RX and TX angles for beamforming.
-- To efficiently compute all angle combinations, the script utilizes **parallel computing** in MATLAB.
+- To process all angle combinations in parallel, the script utilizes a parfor loop, which relies on MATLAB’s Parallel Computing Toolbox for distributed computation across multiple CPU cores.
 
 ## 2. Phase Shift Tracking
 The `function_phase_shift_tracking.m` script performs common-mid angle phase shift tracking.
