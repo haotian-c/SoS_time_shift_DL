@@ -14,7 +14,7 @@ The `function_phase_shift_tracking.m` script performs common-mid angle phase shi
 - It reads from `cells_phase_track_struct_lookup.mat`, which groups the beamformed RF data into three categories corresponding to mid-angles: **0°, 7.5°, and -7.5°**.
 - The script executes phase shift tracking and summation, resulting in **three time-shift maps** that serve as inputs for a neural network used in **Speed of Sound (SoS) reconstruction**.
 
-## Data Files
+## Look-up Files
 
 ### **BF_angle_combs.mat**
 - Specifies all the **TX and RX angle combinations** used in beamforming.
