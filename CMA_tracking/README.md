@@ -14,7 +14,8 @@ The `function_phase_shift_tracking.m` script performs common-mid angle phase shi
 - It reads from `cells_phase_track_struct_lookup.mat`, which groups the beamformed RF data into three categories corresponding to mid-angles: **0°, 7.5°, and -7.5°**.
 - To prevent signal decorrelation, phase shift tracking is performed incrementally over small angular steps. The phase shifts from each step are then added together to yield the total phase shift between the endpoints.
 - The script executes phase shift tracking and summation, resulting in **three time-shift maps** that serve as inputs for a neural network used in **Speed of Sound (SoS) reconstruction**.
-
+- Optionally, when attenuation is significant, consider using a depth-dependent center frequency to convert phase shift to time shift. The center frequency profile can be measured using the 'function_calculate_depth_dependent_center_frequency.m' script, given a 2D beamformed RF dataset.
+- 
 ## Look-up Files
 
 ### **BF_angle_combs.mat**
