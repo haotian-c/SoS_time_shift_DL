@@ -1,3 +1,4 @@
+# Quick demo of U-Net training and inference for SoS imaging
 
 This project uses a U-Net model to transform time-shift maps into speed of sound (SoS) maps. While the complete project is more extensive, this directory provides a quick-start setup for model training and inference.
 
