@@ -18,7 +18,7 @@ function fun_beamforming_3psfs_WinSize123(angle_combs_i, dir_binary_data, dir_na
     PITCH_IN_MM = 0.23;
     GRIDS_NUM_PER_PITCH = 5;
 
-    INTERVAL = Receive(1).endSample; % Length of signal per Tx and Rx
+    INTERVAL = Receive(1).endSample;
     FACTOR_RESAMPLING_RATE = 8;
 
     FREQ_SAMPLING = 20.8333e6;
