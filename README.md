@@ -13,7 +13,7 @@ This repository accompanies the paper
 │── /ray_tracing_synthesis          # GPU-accellerated ray-tracing synthesize to convert natural image to SoS map and then compute time-shift map
 │── /pytorch_SSIM_module            # PyTorch implementation SSIM loss for training
 │── /model_training                 # pretraining using ray-tracing synthesized data and finetuning with full-wave simulation data
-|── /demo_of_training_and_inference # Runable demo with minimal environment requirement
+|── [/demo_of_training_and_inference](https://github.com/haotian-c/SoS_time_shift_DL/tree/main/demo_of_training_and_inference) # Runable demo with minimal environment requirement
 │── LICENSE                         # License information
 │── README.md                       # Project documentation
 │── model.py                        # Time-shift DL model implemented as U-Net
