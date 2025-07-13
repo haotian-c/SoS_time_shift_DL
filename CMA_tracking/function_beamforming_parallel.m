@@ -57,7 +57,7 @@ function fun_beamforming_3psfs_WinSize123(angle_combs_i, dir_binary_data, dir_na
 
         res_ampli = zeros(Z_AXIS_LENGTH + 1, WIDTH);
 
-        for z = 1 + 10:Z_AXIS_LENGTH
+        for z = 1:Z_AXIS_LENGTH
             for x = 1:WIDTH
                 if z < STARTING_PIXEL_BEAMFORMING
                     res_ampli(z, x) = 0;
