@@ -28,11 +28,6 @@ To set up the Python environment using Conda:
 ```bash
 conda env create -f environment.yml
 ```
-Then activate the environment:
-```bash
-conda activate <your_env_name>
-```
-(Replace <your_env_name> with the name specified in the environment.yml file.)
 
 
 ### Installing k-Wave for MATLAB
