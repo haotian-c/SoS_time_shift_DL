@@ -12,6 +12,7 @@ The `function_beamforming_parallel.m` script performs dynamic receiving, confini
 The `function_phase_shift_tracking.m` script performs common-mid angle phase shift tracking.
 
 - It reads from `cells_phase_track_struct_lookup.mat`, which groups the beamformed RF data into three categories corresponding to mid-angles: **0°, 7.5°, and -7.5°**.
+- To prevent signal decorrelation, phase shift tracking is performed incrementally over small angular steps. The phase shifts from each step are then added together to yield the total phase shift between the endpoints.
 - The script executes phase shift tracking and summation, resulting in **three time-shift maps** that serve as inputs for a neural network used in **Speed of Sound (SoS) reconstruction**.
 
 ## Look-up Files
