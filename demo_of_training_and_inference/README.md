@@ -16,8 +16,10 @@ A runnable demo is provided in **`demo_of_training_and_inference.ipynb`**, which
    Open and run `demo_of_training_and_inference.ipynb`.  
    The notebook will automatically read and process the provided data.
 
+   
 
 > **Note:**  
 > Please pull the entire repository and maintain the files in their original locations. There are dependencies for `demo_of_training_and_inference.ipynb` to function properly.
+
 > For example, it reads the `ray_tracing_synthesis` module from `../ray_tracing_synthesis` and the model from `../`
    
