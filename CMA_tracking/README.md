@@ -2,7 +2,7 @@
 
 The common-mid angle processing is performed through two steps:
 
-## 1. Dynamic Receiving with Beamforming
+## 1. Delay-and-sum Beamforming with Dynamic Receive Focusing
 The `function_beamforming_parallel.m` script performs dynamic receiving, confining the RX angle to be symmetric to the TX angle with respect to a prespecified mid-angle. 
 
 - It reads from `BF_angle_combs.mat`, which specifies all the combinations of RX and TX angles for beamforming.
