@@ -11,9 +11,7 @@ A runnable demo is provided in [**`demo_of_training_and_inference.ipynb`**](http
    https://drive.google.com/file/d/1aEwPTJajCLqolF2QkslsZ3OPAIdrCnAO/view?usp=drive_link
 
 
-   Backup link:
-   
-   https://uillinoisedu-my.sharepoint.com/:u:/g/personal/hc19_illinois_edu/EYowx88sUQFJvLTtYShjGxkBvo23voIfK3NqjU2C_G_aig?e=XLZcxz
+   Backup link: <br> https://uillinoisedu-my.sharepoint.com/:u:/g/personal/hc19_illinois_edu/EYowx88sUQFJvLTtYShjGxkBvo23voIfK3NqjU2C_G_aig?e=XLZcxz
    
 3. **Place the data:**  
    Put the downloaded file in this directory (the same folder as `demo_of_training_and_inference.ipynb`).
