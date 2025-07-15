@@ -1,4 +1,4 @@
-# SoS Imaging Using Time Shift Map (repository under construction)
+# SoS Imaging Using Time Shift Map
 
 
 ## Overview
@@ -42,6 +42,8 @@ This project relies on **k-Wave 1.4** for full-wave ultrasound simulation. Pleas
 - The common-mid angle (CMA) tracking is implemented in MATLAB using Signal Processing Toolbox and Parallel Computing Toolbox.
 - The deep learning is implemented in Python using PyTorch framework.
 
+## Run a quick demo of training and inference
+https://github.com/haotian-c/SoS_time_shift_DL/tree/main/demo_of_training_and_inference
 
 
 ## Citation
