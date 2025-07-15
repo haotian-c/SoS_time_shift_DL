@@ -9,6 +9,7 @@ A runnable demo is provided in [**`demo_of_training_and_inference.ipynb`**](http
 1. **Download the dataset:**  
    Download the compressed natural images (3.8 GB, already grayscaled and resized to 73×89) from  
    https://drive.google.com/file/d/1aEwPTJajCLqolF2QkslsZ3OPAIdrCnAO/view?usp=drive_link
+   
    Backup link: https://uillinoisedu-my.sharepoint.com/:u:/g/personal/hc19_illinois_edu/EYowx88sUQFJvLTtYShjGxkBvo23voIfK3NqjU2C_G_aig?e=XLZcxz
    
 3. **Place the data:**  
