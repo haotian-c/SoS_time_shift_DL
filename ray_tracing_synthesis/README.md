@@ -25,7 +25,7 @@ This directory contains a GPU-accelerated implementation of ray-tracing synthesi
 
 
 ```bash
-jupyter notebook demo_ray_tracing_synthesis.ipynb
+jupyter lab demo_ray_tracing_synthesis.ipynb
 ```
 
 
