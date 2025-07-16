@@ -11,7 +11,7 @@ This directory contains a GPU-accelerated implementation of ray-tracing synthesi
 - `demo_ray_tracing_synthesis.ipynb`: Jupyter notebook demonstrating:
   - Image-to-SoS map conversion from `example.jpg`
   - Ray-tracing synthesis of time-shift maps using forward models corresponding to mid angles of 0°, +7.5°, and −7.5°
-  - Computational performance measurement, with runtime under 0.01 seconds on an NVIDIA A40 GPU [Run time measurement provided in] https://github.com/haotian-c/SoS_time_shift_DL/blob/main/ray_tracing_synthesis/demo_ray_tracing_synthesis.ipynb
+  - Computational performance measurement, with runtime under 0.01 seconds on an NVIDIA A40 GPU. Run time measurement provided in [Jupyter Notebook](https://github.com/haotian-c/SoS_time_shift_DL/blob/main/ray_tracing_synthesis/demo_ray_tracing_synthesis.ipynb) 
 
 - `example.jpg`: Sample grayscale image used for demonstration
 
