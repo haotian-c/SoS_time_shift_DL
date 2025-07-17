@@ -3,7 +3,7 @@ import scipy.io
 import numpy as np
 from PIL import Image
 from torchvision import transforms
-
+import os
 
 class SoSToTimeShiftTransformer:
     def __init__(self, bf_sos: float = 1540.0, device: str = None):
@@ -26,6 +26,9 @@ class SoSToTimeShiftTransformer:
         Returns:
             dict: Dictionary of matrix_key to matrix_tensor.
         """
+        # Get the directory where this file (module) lives
+        module_dir = os.path.dirname(os.path.abspath(__file__))
+
         file_paths = {
             '0psf': 'd11_11_psf0_forward_modelmatrix.mat',
             '7p5psf': 'd11_11_7p5_forward_modelmatrix.mat',
@@ -33,10 +36,13 @@ class SoSToTimeShiftTransformer:
         }
 
         matrices = {}
-        for key, path in file_paths.items():
-            mat = scipy.io.loadmat(path)
+        for key, fname in file_paths.items():
+            mat_path = os.path.join(module_dir, fname)
+            if not os.path.exists(mat_path):
+                raise FileNotFoundError(f"Matrix file not found: {mat_path}")
+            mat = scipy.io.loadmat(mat_path)
             if 'L' not in mat:
-                raise KeyError(f"Expected key 'L' in {path}, but not found.")
+                raise KeyError(f"Expected key 'L' in {mat_path}, but not found.")
             matrices[key] = torch.tensor(mat['L'], dtype=torch.float32, device=self.device)
         return matrices
 
