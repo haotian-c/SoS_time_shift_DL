@@ -25,4 +25,5 @@ A runnable demo is provided in [**`demo_of_training_and_inference.ipynb`**](http
 > **Note:**  
 > Please pull the entire repository and maintain the files in their original locations. There are dependencies for `demo_of_training_and_inference.ipynb` to function properly.
 > For example, it reads the `ray_tracing_synthesis` module from `../ray_tracing_synthesis` and the U-Net model from `../` (project root directory)
+> The ray tracing synthesis is performed to acquire time-shift maps
    
