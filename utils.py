@@ -151,81 +151,6 @@ def set_requires_grad(nets, requires_grad=False):
             for param in net.parameters():
                 param.requires_grad = requires_grad
 
-
-############################################
-### project from SoS map to time shit , differentiable
-############################################
-mask_foi = torch.ones((73, 89))
-class project_to_time_lag_0psf(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.forward_model_origin = torch.tensor(scipy.io.loadmat(
-            ('./physics_forward_model/d11_11_psf0_forward_modelmatrix.mat'))['L'],dtype=torch.float)
-        self.linear_forward_model = nn.Linear(len(self.forward_model_origin), len(self.forward_model_origin), bias=False)
-        with torch.no_grad():
-            self.linear_forward_model.weight = torch.nn.Parameter(torch.tensor(self.forward_model_origin))
-
-    def forward(self,SlownessRelat):
-        flattened_slowness =  torch.flatten(SlownessRelat.transpose(2, 3), start_dim=2)
-        projected_timelag = self.linear_forward_model(flattened_slowness)
-        product = projected_timelag.view(len(SlownessRelat),1,89,73).transpose(2, 3)
-        product = torch.mul(product,mask_foi.to(product.device))
-        return product
-    
-class project_to_time_lag_7p5psf(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.forward_model_origin = torch.tensor(scipy.io.loadmat(
-            ('./physics_forward_model/d11_11_7p5_forward_modelmatrix.mat'))['L'],dtype=torch.float)
-        self.linear_forward_model = nn.Linear(len(self.forward_model_origin), len(self.forward_model_origin), bias=False)
-        with torch.no_grad():
-            self.linear_forward_model.weight = torch.nn.Parameter(torch.tensor(self.forward_model_origin))
-
-    def forward(self,SlownessRelat):
-        flattened_slowness =  torch.flatten(SlownessRelat.transpose(2, 3), start_dim=2)
-        projected_timelag = self.linear_forward_model(flattened_slowness)
-        product = projected_timelag.view(len(SlownessRelat),1,89,73).transpose(2, 3)
-        product = torch.mul(product,mask_foi.to(product.device))
-        return product
-    
-class project_to_time_lag_minus7p5psf(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.forward_model_origin = torch.tensor(scipy.io.loadmat(
-            ('./physics_forward_model/d11_11_minus7p5_forward_modelmatrix.mat'))['L'],dtype=torch.float)
-        self.linear_forward_model = nn.Linear(len(self.forward_model_origin), len(self.forward_model_origin), bias=False)
-        with torch.no_grad():
-            self.linear_forward_model.weight = torch.nn.Parameter(torch.tensor(self.forward_model_origin))
-
-    def forward(self,SlownessRelat):
-        flattened_slowness =  torch.flatten(SlownessRelat.transpose(2, 3), start_dim=2)
-        projected_timelag = self.linear_forward_model(flattened_slowness)
-        product = projected_timelag.view(len(SlownessRelat),1,89,73).transpose(2, 3)
-        product = torch.mul(product,mask_foi.to(product.device))
-        return product
-    
-    
-    
-###############################
-### Convert SoS to time-shift map
-################################
-
-
-forward_model_transform_matrix_7p5psf = scipy.io.loadmat(('./physics_forward_model/d11_11_7p5_forward_modelmatrix.mat'))['L']
-def sos2timelag_7p5psf(sos_matrix): ## Input is a SoS matrix
-    return np.matmul(forward_model_transform_matrix_7p5psf,1/sos_matrix.flatten('F')-1/1540).reshape((89,73)).T
-
-forward_model_transform_matrix_0psf = scipy.io.loadmat(('./physics_forward_model/d11_11_psf0_forward_modelmatrix.mat'))['L']
-def sos2timelag_0psf(sos_matrix): ## Input is a SoS matrix
-    return np.matmul(forward_model_transform_matrix_0psf,1/sos_matrix.flatten('F')-1/1540).reshape((89,73)).T
-
-
-forward_model_transform_matrix_minus7p5psf = scipy.io.loadmat(('./physics_forward_model/d11_11_minus7p5_forward_modelmatrix.mat'))['L']
-def sos2timelag_minus7p5psf(sos_matrix): ## Input is a SoS matrix
-    return np.matmul(forward_model_transform_matrix_minus7p5psf,1/sos_matrix.flatten('F')-1/1540).reshape((89,73)).T
-    
-    
-    
     
     
     
@@ -257,10 +182,6 @@ def rf_to_bmode(rf_data, dynamic_range=40):
     
     
     
-    
-downsample_size = 11
-lateral_length = 51
-axial_length = 73
 def extract_center_columns(array,width=axial_length):
     """
     Extracts the center (height × width) region from a 2D NumPy array.
