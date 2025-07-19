@@ -28,14 +28,14 @@ This repository accompanies the paper
 ## Setup Instructions
 This project uses 1) **MATLAB** for full-wave simulation, beamforming, and phase-shift tracking, and 2) **Python** for ray-tracing synthesis and deep learning model training.
 
-### Installing Python Dependencies
+### • Installing Python Dependencies
 To set up the Python environment using Conda:
 ```bash
 conda env create -f environment.yml
 ```
 
 
-### Installing k-Wave for MATLAB
+### • Installing k-Wave for MATLAB
 This project relies on **k-Wave 1.4** for full-wave ultrasound simulation. Please follow these steps:
 
 1. Download k-Wave from the official website: [http://www.k-wave.org/download.php](http://www.k-wave.org/download.php)
