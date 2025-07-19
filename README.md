@@ -38,9 +38,9 @@ conda env create -f environment.yml
 ### • Installing k-Wave for MATLAB
 This project relies on **k-Wave 1.4** for full-wave ultrasound simulation. Please follow these steps:
 
-1. Download k-Wave from the official website: [http://www.k-wave.org/download.php](http://www.k-wave.org/download.php)
-2. Add the k-Wave toolbox to your MATLAB path.
-3. For GPU-accelerated simulation, install the C++/CUDA binaries provided on the k-Wave [download page](http://www.k-wave.org/download.php).
+1) Download k-Wave from the official website: [http://www.k-wave.org/download.php](http://www.k-wave.org/download.php)
+2) Add the k-Wave toolbox to your MATLAB path.
+3) For GPU-accelerated simulation, install the C++/CUDA binaries provided on the k-Wave [download page](http://www.k-wave.org/download.php).
 
 
 ## Notes
