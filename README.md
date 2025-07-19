@@ -24,7 +24,7 @@ This repository accompanies the paper
 ```
 
 ## Setup Instructions
-This project uses 1) MATLAB for full-wave simulation, beamforming, and phase-shift tracking, and 2) Python for ray-tracing synthesis and deep learning model training.
+This project uses 1) **MATLAB** for full-wave simulation, beamforming, and phase-shift tracking, and 2) **Python** for ray-tracing synthesis and deep learning model training.
 
 ### Installing Python Dependencies
 To set up the Python environment using Conda:
