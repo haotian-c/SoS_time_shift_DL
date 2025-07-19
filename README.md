@@ -8,6 +8,7 @@ This project explores a deep learning approach for pulse-echo speed-of-sound (So
 This repository accompanies the paper  
 [Chen, H., & Han, A. (2024). Robust deep learning for pulse-echo speed of sound imaging via time-shift maps. Authorea Preprints.](https://www.techrxiv.org/doi/full/10.36227/techrxiv.171709863.32880935)
 
+
 ## Directory Structure
 ```
 /project_root
@@ -22,6 +23,7 @@ This repository accompanies the paper
 │── model.py                        # Time-shift DL model implemented as U-Net
 │── utils.py                        # Utility functions
 ```
+
 
 ## Setup Instructions
 This project uses 1) **MATLAB** for full-wave simulation, beamforming, and phase-shift tracking, and 2) **Python** for ray-tracing synthesis and deep learning model training.
