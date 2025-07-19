@@ -11,7 +11,7 @@ This repository accompanies the paper
 │── /CMA_tracking                   # Common mid-angle tracking, including beamforming and phase shift tracking
 │── /full-wave simulation           # Full-wave simulation using k-Wave simulation toolbox and with GPU configuration
 │── /ray_tracing_synthesis          # GPU-accellerated ray-tracing synthesize to convert natural image to SoS map and then compute time-shift map
-│── /pytorch_SSIM_module            # PyTorch implementation SSIM loss for training
+│── /pytorch_SSIM_module            # PyTorch implementation of SSIM loss for training
 │── /model_training                 # pretraining using ray-tracing synthesized data and finetuning with full-wave simulation data
 |── /demo_of_training_and_inference # Runable demo with minimal environment requirement
 │── LICENSE                         # License information
@@ -21,7 +21,7 @@ This repository accompanies the paper
 ```
 
 ## Setup Instructions
-This project uses MATLAB for full-wave simulation, beamforming, and phase-shift tracking, and Python for ray-tracing synthesis and deep learning model training.
+This project uses 1) MATLAB for full-wave simulation, beamforming, and phase-shift tracking, and 2) Python for ray-tracing synthesis and deep learning model training.
 
 ### Installing Python Dependencies
 To set up the Python environment using Conda:
@@ -35,7 +35,7 @@ This project relies on **k-Wave 1.4** for full-wave ultrasound simulation. Pleas
 
 1. Download k-Wave from the official website: [http://www.k-wave.org/download.php](http://www.k-wave.org/download.php)
 2. Add the k-Wave toolbox to your MATLAB path.
-3. For GPU-accelerated simulation, install the C++/CUDA binaries provided on the k-Wave download page.
+3. For GPU-accelerated simulation, install the C++/CUDA binaries provided on the k-Wave [download page](http://www.k-wave.org/download.php).
 
 
 ## Notes
