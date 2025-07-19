@@ -43,15 +43,15 @@ This project relies on **k-Wave 1.4** for full-wave ultrasound simulation. Pleas
 2) Add the k-Wave toolbox to your MATLAB path.
 3) For GPU-accelerated simulation, install the C++/CUDA binaries provided on the k-Wave [download page](http://www.k-wave.org/download.php).
 
-
-## Notes
-- The common-mid angle (CMA) tracking is implemented in MATLAB using Signal Processing Toolbox and Parallel Computing Toolbox.
-- The deep learning is implemented in Python using PyTorch framework.
-
 ## Quick Startup
 Run a hands-on demo of model training and inference
 
 https://github.com/haotian-c/SoS_time_shift_DL/tree/main/demo_of_training_and_inference
+
+
+## Notes
+- The common-mid angle (CMA) tracking is implemented in MATLAB using Signal Processing Toolbox and Parallel Computing Toolbox.
+- The deep learning is implemented in Python using PyTorch framework.
 
 
 ## Citation
