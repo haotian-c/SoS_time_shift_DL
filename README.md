@@ -1,7 +1,11 @@
-# SoS Imaging Using Time Shift Map
+# Deep Learning for SoS Imaging via Time Shift Maps
 
 
 ## Overview
+This project explores a deep learning approach for pulse-echo speed-of-sound (SoS) imaging using time shift maps. The key idea is to combine the learning capacity of deep neural networks with time-shift measurements. The latter are informed by physical principles and performed with common mid-angle (CMA) tracking to capture SoS-related information from raw data. This combination aims to improve the robustness and domain generalizability of the deep learning model, while maintaining the model’s ability to learn imaging processes beyond traditional straight-ray assumptions. 
+
+This repository includes both the machine learning model and training process, as well as signal processing modules for transforming raw channel data into time shift maps.
+
 This repository accompanies the paper  
 [Chen, H., & Han, A. (2024). Robust deep learning for pulse-echo speed of sound imaging via time-shift maps. Authorea Preprints.](https://www.techrxiv.org/doi/full/10.36227/techrxiv.171709863.32880935)
 
