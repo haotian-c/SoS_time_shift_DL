@@ -2,8 +2,7 @@
 
 
 ## Overview
-This project explores a deep learning approach for pulse-echo speed-of-sound (SoS) imaging using time shift maps. The key idea is to combine the learning capacity of deep neural networks with time-shift measurements. The latter are informed by physical principles to capture SoS-related information from raw data and are computed using common mid-angle (CMA) tracking. This combination aims to improve the robustness and domain generalizability of the deep learning model, while maintaining the model’s ability to learn imaging processes beyond traditional straight-ray assumptions. The repository contains the machine learning model, training scripts, and signal processing modules for computing time shift maps from raw channel data.
-
+This project presents a deep learning approach to pulse-echo speed-of-sound (SoS) imaging based on time-shift maps. It combines the expressive power of neural networks with the time-shift measurements that are physically informed and derived via common mid-angle (CMA) tracking. This integration enhances the model’s robustness and domain generalizability, while preserving its ability to learn imaging processes beyond traditional straight-ray assumptions. The repository provides the implementation of the neural network model, training scripts, and signal processing modules for computing time-shift maps from raw channel data.
 
 This repository accompanies the paper  
 [Chen, H., & Han, A. (2024). Robust deep learning for pulse-echo speed of sound imaging via time-shift maps. Authorea Preprints.](https://www.techrxiv.org/doi/full/10.36227/techrxiv.171709863.32880935)
@@ -14,7 +13,7 @@ This repository accompanies the paper
 /project_root
 │── /CMA_tracking                   # Common mid-angle tracking, including beamforming and phase shift tracking
 │── /full-wave simulation           # Full-wave simulation using k-Wave simulation toolbox and with GPU configuration
-│── /ray_tracing_synthesis          # GPU-accellerated ray-tracing synthesize to convert natural image to SoS map and then compute time-shift map
+│── /ray_tracing_synthesis          # GPU-accellerated ray-tracing synthesis to convert natural image to SoS map and then compute time-shift map
 │── /pytorch_SSIM_module            # PyTorch implementation of SSIM loss for training
 │── /model_training                 # pretraining using ray-tracing synthesized data and finetuning with full-wave simulation data
 |── /demo_of_training_and_inference # Runable demo with minimal environment requirement
