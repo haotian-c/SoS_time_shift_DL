@@ -62,8 +62,10 @@ function fun_beamforming_3psfs_WinSize123(angle_combs_i, dir_binary_data, dir_na
                 if z < STARTING_PIXEL_BEAMFORMING
                     res_ampli(z, x) = 0;
                 else
+                    % Determine the center of RX aperture based on RX angle and the location of beamformed pixel
                     center_of_rx_aperture = x + z * tand(-Rx_angle_degree);
                     for Rx = 1:ELEMENT_NUMBER
+                        % Specify the RX aperture size based on f-number
                         if abs(Rx * pitch_grids - pitch_grids / 2 - center_of_rx_aperture) > z / f_number / 2
                             continue
                         end
