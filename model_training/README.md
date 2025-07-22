@@ -24,8 +24,7 @@ The training scripts reference components located in the project root directory 
 The reconstruction field is the central 50-pixel-wide lateral region, which corresponds to the area covered by all steered transmissions.
 
 - Uses GPU-accelerated ray-tracing synthesis for rapid generation of time-shift map and SoS pairs, via the `../ray_tracing_synthesis/ray_tracing_synthesis.py` module.
-- Data preparation (image loading, synthesis, and batch assembly) for 1.2 million ray-tracing data is handled by multiple CPU processes running asynchronously in the background. This ensures training data is readily available for the GPU training loop, maximizing throughput and minimizing idle time.
-
+- Data preparation (image loading, synthesis, and batch assembly) for 1.2 million ray-tracing data is handled by multiple CPU processes running asynchronously in the background. Data are buffered in an in-memory queue and consumed by the GPU training loop in real time.
 
 ## Usage
 
