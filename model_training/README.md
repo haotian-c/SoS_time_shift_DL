@@ -25,10 +25,6 @@ The reconstruction field is the central 50-pixel-wide lateral region, which corr
 
 - Uses GPU-accelerated ray-tracing synthesis for rapid generation of time-shift map and SoS pairs, via the `../ray_tracing_synthesis/ray_tracing_synthesis.py` module.
 - Data preparation (image loading, synthesis, and batch assembly) for 1.2 million ray-tracing data is handled by multiple CPU processes running asynchronously in the background. Data are buffered in an in-memory queue and consumed by the GPU training loop in real time.
+- Adjustable parameters: Key training parameters such as batch size, learning rate, and GPU configuration can be set at the top of the script. The U-Net model also accepts `zero_skip_s1` and `disable_bn` as optional arguments during instantiation.
 
-## Usage
-
-1. Adjust parameters at the top of the script (batch size, learning rate, GPUs, etc.) as needed.
-2. Prepare input data: Place the required grayscale JPEG image files in the specified directory (see `test_data_parent_dir` in the script).
-3. Run the script: `python pretraining_w_ray_tracing_synthesized_data_calling_module.py`
 
