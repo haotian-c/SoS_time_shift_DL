@@ -9,7 +9,7 @@ This directory contains two scripts for model training:
 
 ## Dependencies and Structure
 
-The training scripts reference components located in the project root directory `SoS_time_shift_DL/`:
+The training scripts call components located in the project root directory `SoS_time_shift_DL/`:
 
 - `model.py`: U-Net architecture definition.  
 - `utils.py`: Utility functions for data handling and processing.  
