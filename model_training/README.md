@@ -4,7 +4,7 @@
 
 This directory contains two scripts for model training:
 
-1. **Pretraining** using computationally inexpensive ray-tracing synthesized data to fully activate neural units.  
+1. **Pretraining** using 1.2 million computationally inexpensive ray-tracing synthesized data to initialize the model with diverse input patterns.  
 2. **Finetuning** using higher-fidelity full-wave simulation data to obtain the finalized model states.
 
 ## Dependencies and Structure
