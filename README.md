@@ -2,7 +2,7 @@
 
 
 ## Overview
-This project presents a deep learning approach to pulse-echo speed-of-sound (SoS) imaging based on time-shift maps. It combines the expressive power of neural networks with the time-shift measurements that are physically informed and derived via common mid-angle (CMA) tracking. This integration enhances the model’s robustness and domain generalizability, while preserving its ability to learn imaging processes beyond traditional straight-ray assumptions. The repository provides the implementation of the neural network model, training scripts, and signal processing modules for computing time-shift maps from raw channel data.
+This project presents a deep learning approach to pulse-echo speed-of-sound (SoS) imaging based on time-shift maps. It combines a neural network with the time-shift measurements that are physically informed and derived via common mid-angle (CMA) tracking. This integration enhances the model’s robustness and domain generalizability, while preserving its ability to learn imaging processes beyond traditional straight-ray assumptions. The repository provides the implementation of the neural network model, training scripts, and signal processing modules for computing time-shift maps from raw channel data.
 
 This repository accompanies the paper  
 [Chen, H., & Han, A. (2024). Robust deep learning for pulse-echo speed of sound imaging via time-shift maps. Authorea Preprints.](https://www.techrxiv.org/doi/full/10.36227/techrxiv.171709863.32880935)
@@ -21,6 +21,7 @@ This repository accompanies the paper
 │── README.md                       # Project documentation
 │── model.py                        # Time-shift DL model implemented as U-Net
 │── utils.py                        # Utility functions
+│── environment.yml                 # Conda environment specification for PyTorch and dependencies
 ```
 
 
